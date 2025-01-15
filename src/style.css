@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+
+  line-height: 140%;
+}
+
+body {
+  background-color: #1f2124;
+  color: white;
+
+  font-family: 'Poppins', Sans-serif;
+  font-style: normal;
+}
