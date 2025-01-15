@@ -15,7 +15,6 @@ const CrabComponent = () => {
           Diversão em jogos inteligentes: Jogos para entretenimento online para adultos a partir dos
           18 anos!
         </BigHeading>
-
         <SmallTextContainer>
           Estamos empenhados em garantir que a nossa posição de jogo se baseia num sistema de
           verificação robusto que proporciona uma verificação segura da idade aos nossos clientes.

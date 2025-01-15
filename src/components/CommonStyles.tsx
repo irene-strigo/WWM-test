@@ -500,6 +500,9 @@ export const SmallTextContainer = styled.div`
   max-width: 1440px;
   margin: 0 auto;
   padding: 1em;
+  @media screen and (max-width: 800px) {
+    padding: 0;
+  }
 `;
 export const BigHeading = styled.h1`
   color: #fff;
@@ -626,4 +629,10 @@ text-decoration: none;
     font-family: Rubik, sans-serif;
     font-size: 19px;
 }
+`;
+export const CookiesAlertContainer = styled.div`
+  background: white;
+  color: black;
+  position: sticky;
+  bottom: 0;
 `;

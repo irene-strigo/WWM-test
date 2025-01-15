@@ -5,7 +5,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import { MainPage } from './pages';
 
 import PrivacyPage from './pages/PrivacyPage';
-import CookieSettingsPage from './pages/CookieSettingsPage';
+
 import GamePage from './pages/GamePage';
 import BlogPage from './pages/BlogPage';
 import ErrorPage from './pages/ErrorPage';
@@ -24,11 +24,6 @@ export const router = createBrowserRouter([
   {
     path: '/privacy',
     element: <PrivacyPage />,
-  },
-
-  {
-    path: '/cookie-settings',
-    element: <CookieSettingsPage />,
   },
 
   {

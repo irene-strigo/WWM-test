@@ -26,14 +26,16 @@ import {
 import GameButtonComponent from '../components/GameButtonComponent';
 import { Header } from '../components';
 import ModalButton from '../components/ModalButton';
+import CookiesAlertComponent from '../components/CookiesAlertComponent';
 
 const MainPage = () => {
   const [open, setOpen] = useState(false);
   const onOpenModal = () => setOpen(true);
   const onCloseModal = () => setOpen(false);
   const age = localStorage.getItem('age');
+  const isCookies = document.cookie.indexOf('cookie_wwm') === 0;
   return (
-    <PageWrapper onLoad={!age ? onOpenModal : onCloseModal}>
+    <PageWrapper onLoad={!age || !isCookies ? onOpenModal : onCloseModal}>
       <PageBlockContainer>
         <Header />
       </PageBlockContainer>
@@ -98,6 +100,7 @@ const MainPage = () => {
           </SmallTextContainer>
         </TextContainer>
       </PageBlockContainer>
+
       <PageBlockContainer>
         <PositionedSection>
           <MerimadePicture src="/assets/images/merimade.avif"></MerimadePicture>
@@ -196,7 +199,9 @@ const MainPage = () => {
           <AgeSign src="/assets/images/18.svg" />
         </TextContainer>
       </BackgroundContainer>
+
       <Footer />
+      <CookiesAlertComponent />
     </PageWrapper>
   );
 };
